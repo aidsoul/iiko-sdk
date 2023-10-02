@@ -1,0 +1,33 @@
+{
+  "name": "aidsoul/iiko-sdk",
+  "type": "library",
+  "description": "PHP SDK for IIKO (Card/Biz/Cloud/Transport)",
+  "keywords": ["iiko php sdk", "iiko", "iiko api", "iiko card", "iiko transport", "iiko biz", "iiko cloud"],
+  "homepage": "https://github.com/aidsoul/iiko-sdk",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "aidsoul",
+      "email": "work-aidsoul@outlook.com",
+      "role": "developer"
+    },
+    {
+      "name": "Ivan Okhotnikov",
+      "email": "ohotnikovivan@yandex.ru",
+      "role": "developer"
+    }
+  ],
+  "require": {
+    "php": ">=8",
+    "guzzlehttp/guzzle": "~6",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "symfony/var-dumper": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AidSoul\\Iiko\\": "src/"
+    }
+  }
+}
