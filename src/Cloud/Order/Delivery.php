@@ -24,7 +24,8 @@ class Delivery
         return $this;
     }
 
-    public function check(){
+    public function check()
+    {
         $orderData = $this->orderData->export();
         return $this->apiProvider->callMethod(
             'POST',
@@ -35,7 +36,8 @@ class Delivery
         );
     }
 
-    public function create(){
+    public function create()
+    {
         $orderData = $this->orderData->export();
         return $this->apiProvider->callMethod(
             'POST',
@@ -60,7 +62,8 @@ class Delivery
         );
     }
 
-    public function cancel(string $orderId) {
+    public function cancel(string $orderId)
+    {
         return $this->apiProvider->callMethod(
             'POST',
             '/api/1/deliveries/close',
